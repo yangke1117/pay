@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>向商户付款</title>
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="js/jquery.js"></script>
+    <script src="js/num.js"></script>
+        <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+	<form action="pay-success.html">
+	<div class="pay-content">
+		<div class="pay-main">
+			<div class="header"><img src="img/pay.png" alt="">张瑞瑞演示店</div>
+		</div>
+		<div class="money">
+			<span>金额</span>
+			<!-- <input readonly  value="¥" type="text" min-length="1"  class="money1" > -->
+			<input readonly value="￥" type="text" min-length="1"  class="money1" autofocus="">
+		</div>
+	</div>
+	<div class="clavier">
+		<div class="pay-bottom">
+			<!-- <span class="pay-left"></span> -->
+			<span>白菜在手</span>
+			<span class="pay-mid"></span>
+			<span>收款不愁</span>
+<!-- 			<span class="pay-right"></span> -->
+		</div>
+		<table class="cla-table" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="num">1</td>
+				<td class="num">2</td>
+				<td class="num">3</td>
+				<td  class="img-responsive delete"><img src="img/dele.png" alt="" class="img-responsive "></td>
+			</tr>
+			<tr>
+				<td class="num">4</td>
+				<td class="num">5</td>
+				<td class="num">6</td>
+				<td rowspan="3" class="queren">
+					<div class="queren-div">
+						<p class="queren-p">
+							<span>确认</span>
+							<span>支付</span>
+						</p>
+					</div>
+					<input type="submit">
+				</td>
+			</tr>
+			<tr>
+				<td class="num">7</td>
+				<td class="num">8</td>
+				<td class="num">9</td>
+			</tr>
+			<tr>
+				<td class="num" colspan="2">0</td>
+				<td class="num">.</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+</body>
+</html>
